@@ -1,4 +1,4 @@
-from src.sentiment import load_model, classify
+from src.sentimenti import load_model, classify
 
 def test_output_label():
     model = load_model()
