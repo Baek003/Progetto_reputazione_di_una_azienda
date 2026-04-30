@@ -19,4 +19,4 @@ api.upload_folder(
     repo_type="space",
     token=os.environ["HF_TOKEN"],
     ignore_patterns=["*.pyc", "__pycache__", ".git", ".github"]
-)
+ )
