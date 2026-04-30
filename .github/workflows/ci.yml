@@ -27,3 +27,20 @@ jobs:
     - name: Test with pytest
       run: |
         PYTHONPATH=. pytest tests/
+    - name: Deploy su HuggingFace
+      if: github.ref == 'refs/heads/main'
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        pip install huggingface_hub
+        python -c "
+from huggingface_hub import HfApi
+import os
+api = HfApi()
+api.upload_folder(
+    folder_path='.',
+    repo_id='Baek003/Progetto_reputazione_di_una_azienda',
+    repo_type='space',
+    token=os.environ['HF_TOKEN']
+)
+"
