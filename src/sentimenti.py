@@ -1,4 +1,5 @@
-from src.sentimenti import load_model, load_dataset_sentiment, classify
+from transformers import pipeline
+from datasets import load_dataset
 
 def test_load_model():
     model = load_model()
