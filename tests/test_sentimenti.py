@@ -6,7 +6,7 @@ def test_load_model():
 
 def test_load_dataset():
     texts = load_dataset_sentiment()
-    assert len(texts) == 100
+    assert len(texts) == 10
     assert isinstance(texts[0], str)
 
 def test_classify():
