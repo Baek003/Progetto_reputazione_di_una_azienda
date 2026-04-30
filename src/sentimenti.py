@@ -6,8 +6,8 @@ def load_model():
     return pipeline("sentiment-analysis", model=model_path, tokenizer=model_path)
 
 def load_dataset_sentiment():
-    dataset = load_dataset("stanfordnlp/sentiment140")
-    return dataset["train"]["text"][:100]
+    dataset = load_dataset("tweet_eval", "sentiment")
+    return dataset["test"]["text"][:10]
 
 def classify(texts, model):
     results = []
