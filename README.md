@@ -25,7 +25,7 @@ Ad ogni push su main GitHub Actions esegue automaticamente:
 5. Monitoraggio del sentiment
 
 ## HuggingFace Space
-https://huggingface.co/spaces/Baek003/Progetto_reputazione_di_una_azienda
+https://huggingface.co/spaces/Baek03/Progetto_reputazione_di_una_azienda
 
 ## Notebook Colab
 https://colab.research.google.com/drive/1m0uDvPxt3F-I619GGmC89guxRPdieWG9
